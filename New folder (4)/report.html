@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit a confidential or anonymous tip regarding suspected immigration violations, human trafficking, smuggling, or immigration fraud.">
+  <title>Submit a Report | ICE REPORT Citizen Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- TOP FEDERAL BANNER -->
+  <aside class="usa-banner" aria-label="Official Citizen Resource Banner">
+    <div class="container">
+      <div class="usa-banner-left">
+        <svg class="usa-flag-icon" viewBox="0 0 7410 3900" aria-hidden="true">
+          <rect width="7410" height="3900" fill="#B22234"/>
+          <path d="M0,450H7410M0,1050H7410M0,1650H7410M0,2250H7410M0,2850H7410M0,3450H7410" stroke="#FFF" stroke-width="300"/>
+          <rect width="2964" height="2100" fill="#3C3B6E"/>
+        </svg>
+        <span><strong>Secure Tip Transmission</strong> | Encrypted Law Enforcement Gateway</span>
+      </div>
+      <div class="usa-banner-right">
+        <span class="security-badge-pill">
+          <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+          Active 256-Bit TLS
+        </span>
+        <button type="button" class="btn-quick-exit" title="Instantly redirect to weather.gov to protect your privacy">
+          ✕ Quick Exit
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- EMERGENCY NOTIFICATION STRIP -->
+  <div class="emergency-strip" role="region" aria-label="Emergency Hotlines">
+    <div class="container">
+      <div class="emergency-strip-content">
+        <svg class="emergency-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+        </svg>
+        <span>Immediate danger or in-progress emergency? Call <strong>911</strong> immediately.</span>
+      </div>
+      <div class="emergency-links">
+        <span>Trafficking: <a href="tel:18883737888">1-888-373-7888</a></span>
+        <span>•</span>
+        <span>ICE Tip Line: <a href="tel:18663472423">1-866-DHS-2-ICE</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="brand-block" aria-label="ICE REPORT - Homepage">
+        <svg class="brand-emblem-svg" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <path d="M50 5 L88 20 C88 58 50 92 50 92 C50 92 12 58 12 20 Z" fill="#0B2545" stroke="#D97706" stroke-width="4"/>
+          <path d="M50 12 L80 24 C80 54 50 82 50 82 C50 82 20 54 20 24 Z" fill="#133C55" stroke="#F59E0B" stroke-width="1.5"/>
+          <polygon points="50,22 55,34 68,34 57,42 61,54 50,46 39,54 43,42 32,34 45,34" fill="#FBBF24"/>
+          <line x1="32" y1="62" x2="68" y2="62" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="50" y1="56" x2="50" y2="74" stroke="#FFFFFF" stroke-width="2.5"/>
+          <path d="M28 62 L36 72 L20 72 Z" fill="#93C5FD"/>
+          <path d="M72 62 L80 72 L64 72 Z" fill="#93C5FD"/>
+        </svg>
+        <div class="brand-typography">
+          <div class="brand-main-title">
+            ICE REPORT <span class="badge-gov">Incident Submission</span>
+          </div>
+          <div class="brand-sub-title">U.S. Citizen Tip & Immigration Safety Network</div>
+        </div>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle Navigation Menu">
+        <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+      </button>
+
+      <nav id="primary-nav" class="main-nav" aria-label="Primary Site Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="report.html" class="nav-link active">⚠️ Submit Report</a></li>
+          <li><a href="index.html#categories" class="nav-link">Categories</a></li>
+          <li><a href="resources.html" class="nav-link">Official Resources</a></li>
+          <li><a href="privacy.html" class="nav-link">Privacy &amp; Security</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="resources.html" class="btn btn-secondary btn-sm">Direct Hotlines</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUBPAGE BANNER -->
+  <section class="subpage-banner" aria-labelledby="form-heading">
+    <div class="container">
+      <div class="subpage-breadcrumb">
+        <a href="index.html">Home</a> &rsaquo; <span>Official Incident Report Form</span>
+      </div>
+      <h1 id="form-heading" class="subpage-title">Submit an Incident Report</h1>
+      <p class="subpage-lead">
+        Provide factual information regarding suspected immigration offenses, human trafficking, smuggling, or fraud. You may choose 100% anonymous submission.
+      </p>
+    </div>
+  </section>
+
+  <main id="main-content" class="section section-light">
+    <div class="container">
+
+      <!-- STATUTE WARNING STRIP -->
+      <div class="statute-banner" style="margin-top: 0; margin-bottom: 28px;">
+        <svg class="statute-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+        </svg>
+        <div class="statute-text">
+          <h4>MANDATORY NOTICE: 18 U.S.C. § 1001 STATUTORY COMPLIANCE</h4>
+          <p>
+            Knowingly submitting false, fictitious, or malicious reports to federal law enforcement is a federal crime punishable by fines and up to 5 years imprisonment. Ensure all information is truthful to the best of your knowledge.
+          </p>
+        </div>
+      </div>
+
+      <!-- MULTI-STEP REPORT WIZARD FORM -->
+      <div class="report-form-container">
+        <!-- Wizard Header -->
+        <div class="form-wizard-header">
+          <h2 class="form-wizard-title">Official Incident Reporting Form</h2>
+          <p class="form-wizard-sub">Complete the 4 steps below. You will receive an official tracking reference code upon submission.</p>
+        </div>
+
+        <!-- Wizard Progress Bar -->
+        <div class="wizard-progress-bar" role="progressbar" aria-label="Form completion progress">
+          <div class="wizard-step-node active" data-step-indicator="1">
+            <span class="step-node-number">1</span>
+            <span>Category &amp; Location</span>
+          </div>
+          <div class="wizard-step-node" data-step-indicator="2">
+            <span class="step-node-number">2</span>
+            <span>Suspect &amp; Activity</span>
+          </div>
+          <div class="wizard-step-node" data-step-indicator="3">
+            <span class="step-node-number">3</span>
+            <span>Evidence &amp; Identity</span>
+          </div>
+          <div class="wizard-step-node" data-step-indicator="4">
+            <span class="step-node-number">4</span>
+            <span>Review &amp; Affirm</span>
+          </div>
+        </div>
+
+        <!-- Form Element -->
+        <form id="iceReportWizard" class="wizard-body" novalidate>
+          
+          <!-- ================= STEP 1: CATEGORY & LOCATION ================= -->
+          <div class="form-step-content active" data-step="1">
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: #0B2545; margin-bottom: 8px;">
+              Step 1: Select Violation Category &amp; Location
+            </h3>
+            <p style="font-size: 0.875rem; color: #64748B; margin-bottom: 24px;">
+              Specify the primary offense category and the physical location where the suspected activity was observed.
+            </p>
+
+            <div class="form-group">
+              <label class="form-label">
+                Violation Category <span class="required">*</span>
+                <span class="form-label-hint">Select the category that best matches your observation:</span>
+              </label>
+
+              <div class="category-radio-group">
+                <!-- Category 1 -->
+                <label class="category-radio-card">
+                  <input type="radio" name="category" value="immigration-violation" required>
+                  <div>
+                    <span class="category-radio-label">Immigration Violation</span>
+                    <span class="category-radio-desc">Unlawful presence, unauthorized employment, visa overstays, absconders.</span>
+                  </div>
+                </label>
+
+                <!-- Category 2 -->
+                <label class="category-radio-card">
+                  <input type="radio" name="category" value="human-trafficking" required>
+                  <div>
+                    <span class="category-radio-label">Human Trafficking</span>
+                    <span class="category-radio-desc">Forced labor, commercial sex exploitation, confiscated documents, debt bondage.</span>
+                  </div>
+                </label>
+
+                <!-- Category 3 -->
+                <label class="category-radio-card">
+                  <input type="radio" name="category" value="human-smuggling" required>
+                  <div>
+                    <span class="category-radio-label">Human Smuggling</span>
+                    <span class="category-radio-desc">Organized illicit border transport, stash house operations, hazardous transport.</span>
+                  </div>
+                </label>
+
+                <!-- Category 4 -->
+                <label class="category-radio-card">
+                  <input type="radio" name="category" value="immigration-fraud" required>
+                  <div>
+                    <span class="category-radio-label">Immigration Fraud</span>
+                    <span class="category-radio-desc">Marriage fraud, forged identity cards, fake visas, fraudulent "notarios".</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="incidentLocation" class="form-label">
+                Street Address or Business Name <span class="required">*</span>
+                <span class="form-label-hint">e.g., "1200 Industrial Pkwy" or "Apex Landscaping Facility"</span>
+              </label>
+              <input type="text" id="incidentLocation" class="form-control" placeholder="Physical location of incident" required>
+            </div>
+
+            <div class="form-row-3">
+              <div class="form-group">
+                <label for="incidentCity" class="form-label">City <span class="required">*</span></label>
+                <input type="text" id="incidentCity" class="form-control" placeholder="City" required>
+              </div>
+              <div class="form-group">
+                <label for="incidentState" class="form-label">State <span class="required">*</span></label>
+                <select id="incidentState" class="form-control" required>
+                  <option value="">Select State</option>
+                  <option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="FL">Florida</option>
+                  <option value="GA">Georgia</option><option value="HI">Hawaii</option><option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option><option value="WY">Wyoming</option><option value="DC">District of Columbia</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="incidentZip" class="form-label">ZIP Code</label>
+                <input type="text" id="incidentZip" class="form-control" placeholder="ZIP code">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="incidentDate" class="form-label">Date or Timeframe Observed</label>
+                <input type="date" id="incidentDate" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="incidentFrequency" class="form-label">Frequency of Activity</label>
+                <select id="incidentFrequency" class="form-control">
+                  <option value="one-time">One-time occurrence</option>
+                  <option value="daily">Daily / Ongoing</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="intermittent">Intermittent / Sporadic</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= STEP 2: SUSPECT & ACTIVITY DETAILS ================= -->
+          <div class="form-step-content" data-step="2">
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: #0B2545; margin-bottom: 8px;">
+              Step 2: Suspect &amp; Activity Details
+            </h3>
+            <p style="font-size: 0.875rem; color: #64748B; margin-bottom: 24px;">
+              Provide all known details regarding suspects, employers, organizations, or vehicles involved.
+            </p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="suspectName" class="form-label">
+                  Suspect Name(s) or Aliases
+                  <span class="form-label-hint">Full name, nickname, or alias if known</span>
+                </label>
+                <input type="text" id="suspectName" class="form-control" placeholder="e.g. John Doe / alias 'El Chivo'">
+              </div>
+              <div class="form-group">
+                <label for="suspectEmployer" class="form-label">
+                  Business / Employer Name
+                  <span class="form-label-hint">Company employing or harboring individuals</span>
+                </label>
+                <input type="text" id="suspectEmployer" class="form-control" placeholder="e.g. ABC Construction LLC">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="suspectVehicle" class="form-label">Vehicle Information</label>
+                <input type="text" id="suspectVehicle" class="form-control" placeholder="Make, model, color, license plate (e.g. White Ford Transit, TX 123-ABC)">
+              </div>
+              <div class="form-group">
+                <label for="suspectTraits" class="form-label">Physical Description</label>
+                <input type="text" id="suspectTraits" class="form-control" placeholder="Approximate age, height, build, distinguishing tattoos">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="incidentDescription" class="form-label">
+                Detailed Narrative of Suspected Activity <span class="required">*</span>
+                <span class="form-label-hint">Describe what you witnessed, how you know, and any specific indicators of illegal conduct:</span>
+              </label>
+              <textarea id="incidentDescription" class="form-control" placeholder="Please provide specific, factual details. For example: who was involved, what actions occurred, how many people, how long this has taken place, and any weapons or contraband observed..." required></textarea>
+            </div>
+          </div>
+
+          <!-- ================= STEP 3: EVIDENCE & IDENTITY CONTROLS ================= -->
+          <div class="form-step-content" data-step="3">
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: #0B2545; margin-bottom: 8px;">
+              Step 3: Evidence Upload &amp; Anonymity Preferences
+            </h3>
+            <p style="font-size: 0.875rem; color: #64748B; margin-bottom: 24px;">
+              Attach supporting evidence and select whether you wish to remain 100% anonymous or provide confidential whistleblower contact details.
+            </p>
+
+            <!-- ANONYMITY SWITCH -->
+            <div class="anonymity-toggle-box">
+              <div class="anonymity-toggle-header">
+                <label class="anonymity-toggle-label" for="anonymousToggle">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="#0B2545"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                  Submit 100% Anonymously (Recommended for Public Safety)
+                </label>
+                <label class="switch">
+                  <input type="checkbox" id="anonymousToggle" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <p style="font-size: 0.8125rem; color: #475569; margin: 0;">
+                When active, <strong>no identifying information, IP address, or digital signatures</strong> are linked to your report. You will receive an anonymous case reference code for tracking.
+              </p>
+            </div>
+
+            <!-- OPTIONAL CONTACT DETAILS (SHOWN ONLY IF ANONYMITY IS TOGGLED OFF) -->
+            <div id="tipsterContactDetails" style="display: none; background: #FFFFFF; border: 1px solid #CBD5E1; border-radius: 8px; padding: 20px; margin-bottom: 24px;">
+              <h4 style="font-size: 1rem; color: #0B2545; margin-bottom: 12px; font-weight: 700;">
+                Whistleblower / Tipster Contact Details (Confidential)
+              </h4>
+              <p style="font-size: 0.8rem; color: #64748B; margin-bottom: 16px;">
+                Your identity is protected under law enforcement confidential informant guidelines. Only authorized federal investigators may contact you for clarifying details.
+              </p>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="tipsterName" class="form-label">Full Name</label>
+                  <input type="text" id="tipsterName" class="form-control" placeholder="Your full name">
+                </div>
+                <div class="form-group">
+                  <label for="tipsterPhone" class="form-label">Phone Number</label>
+                  <input type="tel" id="tipsterPhone" class="form-control" placeholder="(555) 000-0000">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="tipsterEmail" class="form-label">Email Address</label>
+                <input type="email" id="tipsterEmail" class="form-control" placeholder="name@example.com">
+              </div>
+            </div>
+
+            <!-- EVIDENCE ATTACHMENT UPLOAD -->
+            <div class="form-group">
+              <label class="form-label">
+                Upload Photographs, Documents, or Supporting Files (Optional)
+                <span class="form-label-hint">Accepted formats: JPG, PNG, PDF, DOCX (Max 25MB total). Metadata is scrubbed automatically.</span>
+              </label>
+
+              <div class="file-dropzone" id="evidenceDropzone" tabindex="0" role="button" aria-label="Upload evidence dropzone">
+                <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+                <div style="font-weight: 700; color: #0B2545;">Drag &amp; drop files here, or <span style="color: #2563EB; text-decoration: underline;">browse your device</span></div>
+                <div style="font-size: 0.775rem; color: #64748B; margin-top: 4px;">Files are encrypted immediately upon selection</div>
+              </div>
+              <input type="file" id="evidenceFileInput" multiple style="display: none;" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx">
+              
+              <ul class="file-list" id="evidenceFileList"></ul>
+            </div>
+          </div>
+
+          <!-- ================= STEP 4: REVIEW & STATUTE AFFIRMATION ================= -->
+          <div class="form-step-content" data-step="4">
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: #0B2545; margin-bottom: 8px;">
+              Step 4: Review Summary &amp; Legal Affirmation
+            </h3>
+            <p style="font-size: 0.875rem; color: #64748B; margin-bottom: 20px;">
+              Review your submission carefully. Once submitted, your report will be encrypted and routed to federal investigators.
+            </p>
+
+            <!-- Dynamic Summary Placeholder populated by script.js -->
+            <div id="reviewSummaryContent" style="margin-bottom: 24px;"></div>
+
+            <!-- Affirmation Checkbox -->
+            <div style="background: #FFFBEB; border: 1px solid #FCD34D; border-radius: 8px; padding: 20px; margin-bottom: 24px;">
+              <label style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer;">
+                <input type="checkbox" id="legalAffirmation" style="margin-top: 4px; accent-color: #0B2545;" required>
+                <span style="font-size: 0.875rem; color: #78350F; line-height: 1.5;">
+                  <strong>Affirmation under 18 U.S.C. § 1001:</strong> I hereby certify that the information contained in this report is submitted in good faith and is accurate and truthful to the best of my knowledge. I understand that knowingly submitting false statements to federal authorities constitutes a felony offense.
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- ================= WIZARD ACTION FOOTER ================= -->
+          <div class="wizard-footer">
+            <button type="button" class="btn btn-secondary" id="wizardPrevBtn" style="display: none;">
+              &larr; Previous Step
+            </button>
+            <div style="margin-left: auto; display: flex; gap: 12px;">
+              <button type="button" class="btn btn-primary" id="wizardNextBtn">
+                Continue to Step 2 &rarr;
+              </button>
+              <button type="submit" class="btn btn-report" id="wizardSubmitBtn" style="display: none;">
+                🔒 Confirm &amp; Submit Official Report
+              </button>
+            </div>
+          </div>
+
+        </form>
+
+        <!-- ================= CONFIRMATION SUCCESS VIEW ================= -->
+        <div id="reportConfirmationScreen" class="wizard-body" style="display: none;">
+          <div class="confirmation-box">
+            <div class="confirmation-badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            </div>
+            <h2 style="font-size: 1.85rem; font-weight: 800; color: #0B2545; margin-bottom: 8px;">
+              Report Successfully Submitted &amp; Encrypted
+            </h2>
+            <p style="color: #475569; max-width: 580px; margin: 0 auto 20px; font-size: 0.95rem;">
+              Your tip has been securely transmitted through the federal reporting protocol. A case file has been initiated for intelligence assessment.
+            </p>
+
+            <div class="reference-id-card">
+              <div style="font-size: 0.75rem; font-weight: 800; color: #64748B; text-transform: uppercase; letter-spacing: 0.05em;">
+                Official Tip Reference Case ID
+              </div>
+              <div class="reference-id-number tracking-id-text">ICE-TIP-2026-00000</div>
+              <div style="font-size: 0.8rem; color: #64748B; margin-top: 6px;">
+                Submitted on: <span class="submission-timestamp">October 15, 2026</span>
+              </div>
+            </div>
+
+            <div style="margin: 20px 0; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+              <button type="button" class="btn btn-secondary btn-sm btn-copy-code" data-copy-target=".tracking-id-text">
+                📋 Copy Case Reference ID
+              </button>
+              <button type="button" class="btn btn-secondary btn-sm" onclick="window.print()">
+                🖨️ Print Submission Receipt
+              </button>
+            </div>
+
+            <div style="background: #F1F5F9; border-radius: 8px; padding: 18px; max-width: 620px; margin: 24px auto 0; text-align: left; font-size: 0.85rem; color: #334155; line-height: 1.6;">
+              <strong>Important Security &amp; Next Steps Advisory:</strong>
+              <ul style="margin-left: 20px; margin-top: 6px;">
+                <li>Keep your Case Reference ID in a secure location if you wish to provide supplemental evidence later.</li>
+                <li>Because this tip was submitted anonymously, federal agents will not contact you unless you provided contact information.</li>
+                <li>To protect your safety and digital privacy, <strong>please clear your web browser cache and history</strong> or click the Quick Exit button.</li>
+              </ul>
+            </div>
+
+            <div style="margin-top: 32px; display: flex; justify-content: center; gap: 16px;">
+              <a href="index.html" class="btn btn-primary">Return to Homepage</a>
+              <button type="button" class="btn btn-quick-exit btn-sm" style="padding: 10px 18px;">
+                ✕ Exit Safely Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- PROFESSIONAL FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>
+            <svg width="24" height="24" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+              <path d="M50 5 L88 20 C88 58 50 92 50 92 C50 92 12 58 12 20 Z" fill="#FFFFFF" stroke="#D97706" stroke-width="4"/>
+              <polygon points="50,25 55,37 68,37 57,45 61,57 50,49 39,57 43,45 32,37 45,37" fill="#0B2545"/>
+            </svg>
+            ICE REPORT
+          </h3>
+          <p>
+            An independent, secure public service platform assisting United States citizens and lawful residents in reporting suspected immigration violations.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Reporting Categories</h4>
+          <ul class="footer-links">
+            <li><a href="report.html?category=immigration-violation">Immigration Violations</a></li>
+            <li><a href="report.html?category=human-trafficking">Human Trafficking</a></li>
+            <li><a href="report.html?category=human-smuggling">Human Smuggling</a></li>
+            <li><a href="report.html?category=immigration-fraud">Immigration Fraud</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Official Links</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.ice.gov/webform/ice-tip-form" target="_blank" rel="noopener noreferrer">Official ICE Tip Form &nearr;</a></li>
+            <li><a href="https://www.ice.gov" target="_blank" rel="noopener noreferrer">ICE.gov Official Portal &nearr;</a></li>
+            <li><a href="https://humantraffickinghotline.org" target="_blank" rel="noopener noreferrer">Trafficking Hotline &nearr;</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal &amp; Privacy</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="about.html">About ICE REPORT</a></li>
+            <li><a href="contact.html">General Inquiries</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div>&copy; 2026 ICE REPORT Citizen Information Portal. All rights reserved.</div>
+        <div class="footer-legal-row">
+          <a href="privacy.html">Privacy</a>
+          <span>•</span>
+          <a href="about.html">Disclaimer</a>
+          <span>•</span>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

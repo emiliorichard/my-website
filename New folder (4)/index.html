@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ICE REPORT - Official citizen tip portal for United States citizens to report suspected immigration violations, human trafficking, human smuggling, and immigration fraud.">
+  <title>ICE REPORT | Report Suspected Immigration Violations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ================= TOP FEDERAL BANNER ================= -->
+  <aside class="usa-banner" aria-label="Official Citizen Resource Banner">
+    <div class="container">
+      <div class="usa-banner-left">
+        <!-- SVG USA Flag Icon -->
+        <svg class="usa-flag-icon" viewBox="0 0 7410 3900" aria-hidden="true">
+          <rect width="7410" height="3900" fill="#B22234"/>
+          <path d="M0,450H7410M0,1050H7410M0,1650H7410M0,2250H7410M0,2850H7410M0,3450H7410" stroke="#FFF" stroke-width="300"/>
+          <rect width="2964" height="2100" fill="#3C3B6E"/>
+        </svg>
+        <span><strong>An official citizen resource & reporting portal</strong> | In cooperation with federal enforcement guidelines</span>
+      </div>
+      <div class="usa-banner-right">
+        <span class="security-badge-pill" title="Protected by 256-bit TLS military-grade encryption">
+          <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+          256-Bit TLS Encrypted
+        </span>
+        <!-- Safety Quick Exit Button for High-Sensitivity Browsing -->
+        <button type="button" class="btn-quick-exit" title="Instantly redirect to weather.gov to protect your privacy">
+          ✕ Quick Exit
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= EMERGENCY NOTIFICATION STRIP ================= -->
+  <div class="emergency-strip" role="region" aria-label="Emergency Hotlines">
+    <div class="container">
+      <div class="emergency-strip-content">
+        <svg class="emergency-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+        </svg>
+        <span>Immediate danger or ongoing crime in progress? Call <strong>911</strong> immediately.</span>
+      </div>
+      <div class="emergency-links">
+        <span>Trafficking Hotline: <a href="tel:18883737888">1-888-373-7888</a></span>
+        <span>•</span>
+        <span>Official ICE Tip Line: <a href="tel:18663472423">1-866-DHS-2-ICE</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= SITE HEADER & NAVIGATION ================= -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <!-- Clean Government Inspired Emblem & Branding -->
+      <a href="index.html" class="brand-block" aria-label="ICE REPORT - Homepage">
+        <svg class="brand-emblem-svg" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <!-- Federal Shield Outline -->
+          <path d="M50 5 L88 20 C88 58 50 92 50 92 C50 92 12 58 12 20 Z" fill="#0B2545" stroke="#D97706" stroke-width="4"/>
+          <!-- Inner Gold Ring -->
+          <path d="M50 12 L80 24 C80 54 50 82 50 82 C50 82 20 54 20 24 Z" fill="#133C55" stroke="#F59E0B" stroke-width="1.5"/>
+          <!-- Central Eagle / Star Symbol -->
+          <polygon points="50,22 55,34 68,34 57,42 61,54 50,46 39,54 43,42 32,34 45,34" fill="#FBBF24"/>
+          <!-- Scales of Justice Base -->
+          <line x1="32" y1="62" x2="68" y2="62" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="50" y1="56" x2="50" y2="74" stroke="#FFFFFF" stroke-width="2.5"/>
+          <path d="M28 62 L36 72 L20 72 Z" fill="#93C5FD"/>
+          <path d="M72 62 L80 72 L64 72 Z" fill="#93C5FD"/>
+        </svg>
+        <div class="brand-typography">
+          <div class="brand-main-title">
+            ICE REPORT <span class="badge-gov">Citizen Portal</span>
+          </div>
+          <div class="brand-sub-title">U.S. Citizen Tip & Immigration Safety Network</div>
+        </div>
+      </a>
+
+      <!-- Mobile Navigation Hamburger Toggle -->
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle Navigation Menu">
+        <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+      </button>
+
+      <!-- Primary Navigation -->
+      <nav id="primary-nav" class="main-nav" aria-label="Primary Site Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="report.html" class="nav-link" style="color: #F87171;">⚠️ Submit Report</a></li>
+          <li><a href="#categories" class="nav-link">Categories</a></li>
+          <li><a href="resources.html" class="nav-link">Official Resources</a></li>
+          <li><a href="privacy.html" class="nav-link">Privacy &amp; Security</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Prominent Header Action Button -->
+      <div class="nav-actions">
+        <a href="report.html" class="btn btn-report btn-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+          Report an Incident
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-text-content">
+          <div class="hero-badge-tag">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            U.S. Law Enforcement Citizen Resource
+          </div>
+          <!-- Exact requested headline -->
+          <h1 id="hero-heading" class="hero-headline">
+            Report Suspected <span class="highlight">Immigration Violations</span>
+          </h1>
+          <!-- Short introduction explaining the platform -->
+          <p class="hero-intro">
+            ICE REPORT empowers United States citizens and lawful residents to securely and confidentially report suspected immigration offenses, human trafficking rings, unlawful smuggling networks, and systemic immigration fraud. Every submission is encrypted, protected by strict whistleblower privacy protocols, and processed in alignment with federal reporting standards.
+          </p>
+
+          <!-- Prominent Report Option Buttons -->
+          <div class="hero-cta-group">
+            <a href="report.html" class="btn btn-report btn-lg" id="primary-report-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+              Report an Incident Now
+            </a>
+            <a href="resources.html" class="btn btn-outline-white btn-lg">
+              Official ICE Resources
+            </a>
+          </div>
+
+          <!-- Trust & Privacy Indicators -->
+          <div class="hero-assurances">
+            <div class="assurance-item">
+              <svg class="assurance-icon" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              <span>100% Anonymous Option Available</span>
+            </div>
+            <div class="assurance-item">
+              <svg class="assurance-icon" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+              <span>256-Bit TLS Military Encryption</span>
+            </div>
+            <div class="assurance-item">
+              <svg class="assurance-icon" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+              <span>Direct Federal Agency Referral</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Fast Action Card -->
+        <div class="hero-action-card">
+          <div class="action-card-header">
+            <h2>Need Immediate Guidance?</h2>
+            <p>Choose the fastest and safest reporting path based on your situation:</p>
+          </div>
+          <ul class="action-card-features">
+            <li>
+              <span class="check-green">✓</span>
+              <div>
+                <strong>Confidential Online Tip Form:</strong>
+                <p style="font-size: 0.8rem; color: #64748B;">Complete our 3-minute guided form with optional document/photo upload.</p>
+              </div>
+            </li>
+            <li>
+              <span class="check-green">✓</span>
+              <div>
+                <strong>Strict Anonymity Guaranteed:</strong>
+                <p style="font-size: 0.8rem; color: #64748B;">No IP addresses or tracking cookies are logged when anonymous mode is active.</p>
+              </div>
+            </li>
+            <li>
+              <span class="check-green">✓</span>
+              <div>
+                <strong>Direct Federal Referral:</strong>
+                <p style="font-size: 0.8rem; color: #64748B;">Tips are routed directly to Homeland Security Investigations (HSI) and ERO.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="action-card-footer">
+            <a href="report.html" class="btn btn-report" style="width: 100%;">
+              Launch Online Report Form
+            </a>
+            <a href="tel:18663472423" class="action-card-phone">
+              <div>
+                <span class="phone-label">Official ICE 24/7 Tip Line</span>
+                <div class="phone-number">1-866-DHS-2-ICE (347-2423)</div>
+              </div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#0B2545"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OFFICIAL FEDERAL STATUTE NOTICE ================= -->
+    <section class="container" aria-label="Legal Warning Notice">
+      <div class="statute-banner">
+        <svg class="statute-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+        </svg>
+        <div class="statute-text">
+          <h4>LEGAL NOTICE: 18 U.S.C. § 1001 — FALSE STATEMENTS PROHIBITED</h4>
+          <p>
+            Federal law provides severe criminal penalties, including fines and imprisonment up to five (5) years, for knowingly and willfully making materially false, fictitious, or fraudulent statements or representations to any department or agency of the United States. This platform is strictly intended for bona fide reports of suspected violations of federal law.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REPORTING CATEGORIES SECTION ================= -->
+    <section id="categories" class="section section-light" aria-labelledby="categories-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Primary Enforcement Areas</span>
+          <h2 id="categories-heading" class="section-title">Core Reporting Categories</h2>
+          <p class="section-desc">
+            To ensure swift action by the appropriate federal taskforce, select the category that most accurately describes the suspected illegal activity.
+          </p>
+        </div>
+
+        <div class="categories-grid">
+          <!-- Category 1: Immigration Violation -->
+          <article class="category-card" aria-labelledby="cat-1-title">
+            <div class="category-header">
+              <div class="category-icon-box" aria-hidden="true">
+                <!-- ID Card / Visa Violation Icon -->
+                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-7 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H6v-1c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1z"/></svg>
+              </div>
+              <h3 id="cat-1-title" class="category-title">Immigration Violation</h3>
+            </div>
+            <p class="category-description">
+              Unlawful presence, unauthorized employment schemes, willful failure to depart following a final order of removal, or evasion of federal immigration inspection.
+            </p>
+            <div class="category-indicators">
+              <span class="indicators-label">Common Warning Signs &amp; Indicators:</span>
+              <ul class="indicators-list">
+                <li>Workplaces systematically hiring unauthorized labor under the table</li>
+                <li>Individuals knowingly overstaying temporary visas or work authorizations</li>
+                <li>Absconders evading ICE Enforcement and Removal Operations (ERO)</li>
+                <li>Use of fraudulent Social Security numbers to gain employment</li>
+              </ul>
+            </div>
+            <div class="category-card-action">
+              <a href="report.html?category=immigration-violation" class="btn btn-secondary btn-sm">
+                Report Immigration Violation &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Category 2: Human Trafficking -->
+          <article class="category-card" aria-labelledby="cat-2-title" style="border-top-color: #DC2626;">
+            <div class="category-header">
+              <div class="category-icon-box" style="color: #DC2626; background: #FEF2F2;" aria-hidden="true">
+                <!-- Broken Handcuff / Human Protection Icon -->
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+              </div>
+              <h3 id="cat-2-title" class="category-title">Human Trafficking</h3>
+            </div>
+            <p class="category-description">
+              Severe forms of trafficking involving force, fraud, or coercion for labor exploitation or commercial sex. Victims are often held through debt bondage or terror.
+            </p>
+            <div class="category-indicators">
+              <span class="indicators-label">Critical Warning Signs &amp; Indicators:</span>
+              <ul class="indicators-list">
+                <li>Withholding passports, IDs, or immigration documents by employers</li>
+                <li>Restricted movement, constant surveillance, or barred from speaking alone</li>
+                <li>Coerced commercial sexual exploitation in illicit massage or residential brothels</li>
+                <li>Extreme debt bondage with deductions preventing workers from leaving</li>
+              </ul>
+            </div>
+            <div class="category-card-action">
+              <a href="report.html?category=human-trafficking" class="btn btn-report btn-sm">
+                Report Human Trafficking &rarr;
+              </a>
+              <span style="font-size: 0.75rem; color: #DC2626; font-weight: 700;">Crisis Hotline: 1-888-373-7888</span>
+            </div>
+          </article>
+
+          <!-- Category 3: Human Smuggling -->
+          <article class="category-card" aria-labelledby="cat-3-title">
+            <div class="category-header">
+              <div class="category-icon-box" aria-hidden="true">
+                <!-- Cargo Transport / Smuggling Network Icon -->
+                <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+              </div>
+              <h3 id="cat-3-title" class="category-title">Human Smuggling</h3>
+            </div>
+            <p class="category-description">
+              Organized commercial transportation or harboring of individuals across international borders in violation of U.S. immigration laws, often under perilous conditions.
+            </p>
+            <div class="category-indicators">
+              <span class="indicators-label">Common Warning Signs &amp; Indicators:</span>
+              <ul class="indicators-list">
+                <li>Suspected "stash houses" with heavy nighttime foot traffic and barred windows</li>
+                <li>Hazardous transport in commercial box trucks, tractor-trailers, or false compartments</li>
+                <li>Organized "coyote" operations coordinating clandestine crossings</li>
+                <li>Armed guards or transport facilitators monitoring groups in transit</li>
+              </ul>
+            </div>
+            <div class="category-card-action">
+              <a href="report.html?category=human-smuggling" class="btn btn-secondary btn-sm">
+                Report Human Smuggling &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Category 4: Immigration Fraud -->
+          <article class="category-card" aria-labelledby="cat-4-title">
+            <div class="category-header">
+              <div class="category-icon-box" aria-hidden="true">
+                <!-- Stamp / Document Seal Fraud Icon -->
+                <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 14H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+              </div>
+              <h3 id="cat-4-title" class="category-title">Immigration Fraud</h3>
+            </div>
+            <p class="category-description">
+              Deceptive schemes to unlawfully obtain immigration benefits, including counterfeit identity documents, marriage fraud, falsified asylum claims, and unauthorized legal consultants.
+            </p>
+            <div class="category-indicators">
+              <span class="indicators-label">Common Warning Signs &amp; Indicators:</span>
+              <ul class="indicators-list">
+                <li>Sham marriages arranged strictly for financial payment to secure green cards</li>
+                <li>Production, sale, or distribution of fake Permanent Resident ("Green") cards</li>
+                <li>Fraudulent immigration consultants ("notarios") promising guaranteed visas</li>
+                <li>Forged employer sponsorships or shell companies used for work visas</li>
+              </ul>
+            </div>
+            <div class="category-card-action">
+              <a href="report.html?category=immigration-fraud" class="btn btn-secondary btn-sm">
+                Report Immigration Fraud &rarr;
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= THREE-STEP GUIDE EXPLAINING HOW REPORTING WORKS ================= -->
+    <section class="section section-white" aria-labelledby="how-it-works-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Procedural Transparency</span>
+          <h2 id="how-it-works-heading" class="section-title">How Reporting Works in Three Steps</h2>
+          <p class="section-desc">
+            Our reporting process is engineered for speed, privacy, and evidentiary integrity. Follow these three simple steps to submit an actionable tip.
+          </p>
+        </div>
+
+        <div class="steps-container">
+          <!-- Step 1 -->
+          <article class="step-card">
+            <div class="step-number-badge">1</div>
+            <h3 class="step-title">Select Violation Category &amp; Location</h3>
+            <p class="step-description">
+              Choose the category that best matches your observation. Enter the exact physical address, business name, or geographic coordinates where the violation is occurring.
+            </p>
+            <ul class="step-details-list">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Specific commercial or residential address
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Dates, recurring times, and frequency
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Company or employer details if applicable
+              </li>
+            </ul>
+          </article>
+
+          <!-- Step 2 -->
+          <article class="step-card">
+            <div class="step-number-badge">2</div>
+            <h3 class="step-title">Provide Details &amp; Attach Evidence</h3>
+            <p class="step-description">
+              Provide descriptions of suspects, vehicles, or aliases. You can securely upload photos, fraudulent documents, or records. Choose between 100% anonymous or confidential identified reporting.
+            </p>
+            <ul class="step-details-list">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Physical descriptions &amp; license plates
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Secure multi-file document / image upload
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Zero personal data required if anonymous
+              </li>
+            </ul>
+          </article>
+
+          <!-- Step 3 -->
+          <article class="step-card">
+            <div class="step-number-badge">3</div>
+            <h3 class="step-title">Official Federal Review &amp; Case Routing</h3>
+            <p class="step-description">
+              Your submission is encrypted and immediately transmitted to federal investigators (ICE HSI, ERO, or USCIS). You receive a unique Case Reference ID for your records.
+            </p>
+            <ul class="step-details-list">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Instant unique Case Tracking ID issued
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Triage by Homeland Security intelligence analysts
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                No public disclosure of informant data
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Central Start Button in Guide -->
+        <div class="text-center" style="margin-top: 48px;">
+          <a href="report.html" class="btn btn-report btn-lg">
+            Start Your Three-Step Report &rarr;
+          </a>
+          <p style="margin-top: 10px; font-size: 0.8125rem; color: #64748B;">
+            Average completion time: 3 to 5 minutes. No registration or software installation required.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VERIFIED OFFICIAL ICE REPORTING RESOURCES PREVIEW ================= -->
+    <section class="section section-light" aria-labelledby="resources-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Verified Federal Contacts</span>
+          <h2 id="resources-heading" class="section-title">Official Government Reporting Channels</h2>
+          <p class="section-desc">
+            You may also report directly through official Department of Homeland Security and ICE hotlines and agencies.
+          </p>
+        </div>
+
+        <div class="resources-grid">
+          <!-- Resource 1 -->
+          <article class="resource-card">
+            <span class="resource-agency-tag">U.S. ICE Official</span>
+            <h3 class="resource-name">ICE Official Online Tip Form</h3>
+            <p class="resource-desc">
+              Direct tip portal maintained by U.S. Immigration and Customs Enforcement for public reports of cross-border crime and immigration violations.
+            </p>
+            <div class="resource-link-box">
+              <a href="https://www.ice.gov/webform/ice-tip-form" target="_blank" rel="noopener noreferrer">
+                Visit ice.gov Tip Form &nearr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Resource 2 -->
+          <article class="resource-card">
+            <span class="resource-agency-tag">DHS / ICE Central</span>
+            <h3 class="resource-name">ICE 24/7 Toll-Free Tip Line</h3>
+            <p class="resource-desc">
+              Toll-free telephone line staffed 24 hours a day, 365 days a year. TTY services available for deaf and hard-of-hearing callers at (802) 872-6196.
+            </p>
+            <div class="resource-link-box">
+              <a href="tel:18663472423">
+                Call 1-866-DHS-2-ICE &nearr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Resource 3 -->
+          <article class="resource-card">
+            <span class="resource-agency-tag">National NGO / Federal Partner</span>
+            <h3 class="resource-name">National Human Trafficking Hotline</h3>
+            <p class="resource-desc">
+              Confidential, 24/7 multilingual resource operated by Polaris Project to report trafficking tips or connect victims with specialized crisis care.
+            </p>
+            <div class="resource-link-box">
+              <a href="tel:18883737888">
+                Call 1-888-373-7888 / Text "HELP" &nearr;
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center" style="margin-top: 36px;">
+          <a href="resources.html" class="btn btn-secondary">
+            View All Verified Federal Resources &amp; Hotline Directory &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CITIZEN INTEGRITY & FAIR REPORTING CALLOUT ================= -->
+    <section class="section section-navy" aria-label="Civil Rights and Guidelines">
+      <div class="container">
+        <div style="max-width: 820px; margin: 0 auto; text-align: center;">
+          <h2 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 16px;">
+            Commitment to Fair, Objective, and Constitutional Reporting
+          </h2>
+          <p style="font-size: 1rem; color: #CBD5E1; line-height: 1.7; margin-bottom: 24px;">
+            Reports must be grounded in specific, verifiable, and observable facts. <strong>ICE REPORT strictly opposes racial profiling, discrimination, and unsubstantiated bias.</strong> Allegations based solely on race, ethnicity, religion, or spoken language are discarded and not forwarded to law enforcement agencies.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+            <a href="about.html" class="btn btn-outline-white">Read Our Operating Ethics</a>
+            <a href="privacy.html" class="btn btn-accent">Whistleblower Protections</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PROFESSIONAL FOOTER ================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Mission -->
+        <div class="footer-brand">
+          <h3>
+            <svg width="24" height="24" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+              <path d="M50 5 L88 20 C88 58 50 92 50 92 C50 92 12 58 12 20 Z" fill="#FFFFFF" stroke="#D97706" stroke-width="4"/>
+              <polygon points="50,25 55,37 68,37 57,45 61,57 50,49 39,57 43,45 32,37 45,37" fill="#0B2545"/>
+            </svg>
+            ICE REPORT
+          </h3>
+          <p>
+            An independent, secure public service platform assisting United States citizens and lawful residents in reporting suspected immigration law violations, human trafficking, human smuggling, and immigration fraud to authorized federal agencies.
+          </p>
+          <div style="font-size: 0.775rem; color: #94A3B8;">
+            Protected by 256-Bit TLS Encryption • Compliant with Section 508 Accessibility
+          </div>
+        </div>
+
+        <!-- Col 2: Core Reporting Navigation -->
+        <div class="footer-col">
+          <h4>Reporting Categories</h4>
+          <ul class="footer-links">
+            <li><a href="report.html?category=immigration-violation">Immigration Violations</a></li>
+            <li><a href="report.html?category=human-trafficking">Human Trafficking</a></li>
+            <li><a href="report.html?category=human-smuggling">Human Smuggling</a></li>
+            <li><a href="report.html?category=immigration-fraud">Immigration Fraud</a></li>
+            <li><a href="report.html">Submit General Tip</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Official Verification -->
+        <div class="footer-col">
+          <h4>Official Federal Links</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.ice.gov" target="_blank" rel="noopener noreferrer">U.S. ICE Official Site &nearr;</a></li>
+            <li><a href="https://www.ice.gov/webform/ice-tip-form" target="_blank" rel="noopener noreferrer">ICE Official Web Tip Form &nearr;</a></li>
+            <li><a href="https://www.dhs.gov" target="_blank" rel="noopener noreferrer">Department of Homeland Security &nearr;</a></li>
+            <li><a href="https://www.uscis.gov" target="_blank" rel="noopener noreferrer">USCIS Fraud Detection (FDNS) &nearr;</a></li>
+            <li><a href="https://humantraffickinghotline.org" target="_blank" rel="noopener noreferrer">Polaris Trafficking Hotline &nearr;</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Platform Information & Legal -->
+        <div class="footer-col">
+          <h4>Policies &amp; Support</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy &amp; Security Policy</a></li>
+            <li><a href="privacy.html#anonymity">Whistleblower Protection</a></li>
+            <li><a href="about.html">About the Platform</a></li>
+            <li><a href="about.html#legal-statute">18 U.S.C. § 1001 Statute</a></li>
+            <li><a href="contact.html">General Inquiries Form</a></li>
+            <li><a href="contact.html#faq">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright & Legal Strip -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div>
+          &copy; 2026 ICE REPORT Citizen Information Portal. Dedicated to public safety and the rule of law.
+        </div>
+        <div class="footer-legal-row">
+          <a href="privacy.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="privacy.html#security">Security Protocols</a>
+          <span>•</span>
+          <a href="about.html#disclaimer">Agency Disclaimer</a>
+          <span>•</span>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
